@@ -91,6 +91,11 @@
 
 ;; READ-ONLY FUNCTIONS
 
+;; Get sBTC balance for any principal - returns response type from token contract
+(define-read-only (get-sbtc-balance (owner principal))
+  (contract-call? 'SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token get-balance owner)
+)
+
 (define-read-only (get-user-investment (property-id uint) (investor principal))
   (default-to 
     { sbtc-invested: u0, investment-date: u0, last-updated: u0 }
