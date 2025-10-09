@@ -4,14 +4,17 @@
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
-    "lib": ["ESNext"],
-    "skipLibCheck": true,
+  "lib": [
+    "esnext",
+    "dom"
+  ],
+  "skipLibCheck": true,
 
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
+  "moduleResolution": "bundler",
+  "allowImportingTsExtensions": true,
+  "resolveJsonModule": true,
+  "isolatedModules": true,
+  "noEmit": true,
 
     "strict": true,
     "noImplicitAny": true,
