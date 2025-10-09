@@ -36,24 +36,38 @@ plan:
     - id: 1
       transactions:
         - contract-publish:
-            contract-name: property-registry
+            contract-name: data-store-v3
             expected-sender: ST15CPBCM5PD2SM7YJCN65YRFM6J2HBEXHAFE4A7C
-            cost: 164700
-            path: "contracts\\property-registry.clar"
+            cost: 65890
+            path: "contracts\\data-store-v3.clar"
             anchor-block-only: true
             clarity-version: 3
         - contract-publish:
-            contract-name: investment-manager
+            contract-name: governance-v3
             expected-sender: ST15CPBCM5PD2SM7YJCN65YRFM6J2HBEXHAFE4A7C
-            cost: 150670
-            path: "contracts\\investment-manager.clar"
+            cost: 160460
+            path: "contracts\\governance-v3.clar"
             anchor-block-only: true
             clarity-version: 3
         - contract-publish:
-            contract-name: rental-distributor
+            contract-name: property-registry-v3
             expected-sender: ST15CPBCM5PD2SM7YJCN65YRFM6J2HBEXHAFE4A7C
-            cost: 123170
-            path: "contracts\\rental-distributor.clar"
+            cost: 415890
+            path: "contracts\\property-registry-v3.clar"
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: investment-manager-v3
+            expected-sender: ST15CPBCM5PD2SM7YJCN65YRFM6J2HBEXHAFE4A7C
+            cost: 274470
+            path: "contracts\\investment-manager-v3.clar"
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: rental-distributor-v3
+            expected-sender: ST15CPBCM5PD2SM7YJCN65YRFM6J2HBEXHAFE4A7C
+            cost: 224490
+            path: "contracts\\rental-distributor-v3.clar"
             anchor-block-only: true
             clarity-version: 3
       epoch: "3.1"
